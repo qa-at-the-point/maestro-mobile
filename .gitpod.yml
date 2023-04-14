@@ -1,0 +1,12 @@
+vscode:
+  extensions:
+    - bungcip.better-toml
+    - PKief.material-icon-theme
+
+tasks:
+  - name: Setup project
+    init: curl -Ls "https://get.maestro.mobile.dev" | bash
+    command: |
+      export PATH="$PATH":"$HOME/.maestro/bin"
+      source ~/.zshrc
+      gp sync-done setup
